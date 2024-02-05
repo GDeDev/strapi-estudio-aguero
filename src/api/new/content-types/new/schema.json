@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "singularName": "new",
+    "pluralName": "news",
+    "displayName": "news",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "blocks"
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Importaciones",
+        "Exportaciones",
+        "Acuerdos Comerciales"
+      ]
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
